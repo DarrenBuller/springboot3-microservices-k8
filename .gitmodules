@@ -1,0 +1,15 @@
+[submodule "product-service"]
+	path = product-service
+	url = git@github.com:DarrenBuller/spring-boot-microservices-product-service.git
+[submodule "notification-service"]
+	path = notification-service
+	url = git@github.com:DarrenBuller/spring-boot-microservices-notification-service.git
+[submodule "api-gateway"]
+	path = api-gateway
+	url = git@github.com:DarrenBuller/spring-boot-microservices-api-gateway.git
+[submodule "inventory-service"]
+	path = inventory-service
+	url = git@github.com:DarrenBuller/spring-boot-microservices-inventory-service.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:DarrenBuller/spring-boot-microservices-frontend.git
