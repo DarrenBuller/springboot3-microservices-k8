@@ -1,0 +1,4 @@
+include:
+  - ./api-gateway/docker-compose.yml
+  - ./inventory-service/docker-compose.yml
+  - ./product-service/docker-compose.yml

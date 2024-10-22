@@ -1,0 +1,36 @@
+services:
+  api-gateway:
+    image: mcr.microsoft.com/devcontainers/java:1-21-bullseye
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    network_mode: "host"
+  frontend:
+    image: mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    network_mode: "host"
+  inventory:
+    image: mcr.microsoft.com/devcontainers/java:1-21-bullseye
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    network_mode: "host"
+  notification:
+    image: mcr.microsoft.com/devcontainers/java:1-21-bullseye
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    network_mode: "host"
+  product:
+    image: mcr.microsoft.com/devcontainers/java:1-21-bullseye
+    volumes:
+      # Mount the root folder that contains .git
+      - .:/workspace:cached
+    command: sleep infinity
+    network_mode: "host"

@@ -1,0 +1,31 @@
+{
+    "name": "Frontend container",
+    "dockerComposeFile": [
+        "../../docker-compose-devcontainer.yml",
+        "../../docker-compose.yml"],
+    "service": "frontend",
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspace/frontend",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/angular-cli:1": {}
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "npm install",
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {},
+			
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"Angular.ng-template"
+			]
+		}
+	}
+  }
